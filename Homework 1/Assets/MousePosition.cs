@@ -11,7 +11,7 @@ public class MousePosition : MonoBehaviour
     {
         render = GetComponent<Renderer>();
 
-        render.material.shader = Shader.Find("Custom/Blur");
+        //render.material.shader = Shader.Find("Custom/Blur");
     }
 
     // Update is called once per frame
