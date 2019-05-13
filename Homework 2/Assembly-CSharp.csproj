@@ -53,6 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CubeMap\CameraControl.cs" />
+     <Compile Include="Assets\CubeMap\Water.cs" />
+     <Compile Include="Assets\GotoScene.cs" />
      <Compile Include="Assets\HeightMap\CreateHiResSphereMesh.cs" />
      <Compile Include="Assets\HeightMap\CreateMesh.cs" />
      <Compile Include="Assets\HeightMap\CreateMeshSimple.cs" />

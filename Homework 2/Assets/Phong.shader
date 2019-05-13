@@ -10,11 +10,13 @@ Shader "CM163/Phong"
         _Shininess ("Shininess", Float) = 10 //Shininess
         _SpecColor ("Specular Color", Color) = (1, 1, 1, 1) //Specular highlights color
         _MainTex ("Texture", 2D) = "white" {}
+        _OutlineWidth("Outline Width", Range(1.0, 5.0)) = 1.02
     }
     
     SubShader
     {
         Pass {
+            ZWrite Off
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -29,7 +31,9 @@ Shader "CM163/Phong"
     
             uniform float4 _EmmisiveColor;
             uniform float _Emissiveness;   
-            sampler _MainTex;       
+            sampler _MainTex;     
+
+            uniform float _OutlineWidth;
           
             struct appdata
             {
@@ -49,6 +53,8 @@ Shader "CM163/Phong"
  
            v2f vert(appdata v)
            { 
+               v.vertex.xyz *= _OutlineWidth;
+
                 v2f o;
                 o.vertexInWorldCoords = mul(unity_ObjectToWorld, v.vertex); //Vertex position in WORLD coords
                 o.normal = v.normal; //Normal 
@@ -104,6 +110,28 @@ Shader "CM163/Phong"
             ENDCG
  
             
+        }
+
+        Pass {
+            ZWrite On
+
+            Material
+            {
+                Diffuse[_Color]
+                Ambient[_Color]
+            }
+
+            Lighting On
+
+            SetTexture[_MainTex]
+            {
+                ConstantColor[_Color]
+            }
+
+            SetTexture[_MainTex]
+            {
+            Combine previous * primary DOUBLE
+            }
         }
             
     }
