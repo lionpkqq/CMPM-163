@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 73
+  controlID: 10
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 12
+  controlID: 64
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -381,9 +381,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: ca0a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffffd4fbffff
+      m_ExpandedIDs: 6ec0ffff7ef4ffffc8faffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.72246265, y: 0.21970105, z: 0.807194}
+    m_Target: {x: -0.7851796, y: 2.519116, z: -0.19372296}
     speed: 2
-    m_Value: {x: -0.72246265, y: 0.21970105, z: 0.807194}
+    m_Value: {x: -0.7851796, y: 2.519116, z: -0.19372296}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -468,9 +468,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.10830303, y: -0.8525315, z: 0.19540307, w: 0.47252327}
+    m_Target: {x: -0.018812876, y: 0.9021673, z: -0.039551124, w: -0.42915732}
     speed: 2
-    m_Value: {x: 0.10830303, y: -0.8525315, z: 0.19540307, w: 0.47252327}
+    m_Value: {x: -0.018812876, y: 0.9021673, z: -0.039551124, w: -0.42915732}
   m_Size:
     m_Target: 6.607396
     speed: 2
@@ -550,19 +550,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/CubeMap
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/CubeMap
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\MoQian\Documents\GitHub\CMPM-163\Homework 2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 300a0000
-    m_LastClickedID: 2608
+    m_SelectedIDs: 400b0000
+    m_LastClickedID: 2880
     m_ExpandedIDs: 000000007209000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000072090000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
